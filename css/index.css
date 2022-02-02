@@ -1,0 +1,349 @@
+/* main模块 */
+.main{
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus{
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: skyblue;
+    overflow: hidden;
+}
+
+/* 快报模块 */
+.main .newsflash{
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.main .newsflash .news{
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news-hd{
+    position: relative;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+.news-hd h5{
+    font-size: 14px;
+    
+}
+
+.news-hd .more{
+    position: relative;
+    margin-right: 10px;
+}
+.news-hd .more::after{
+    position: absolute;
+    top: 0.5px;
+    content: '\e920';
+    font-family: 'icomoon';
+}
+.news-bd{
+    padding: 5px 15px 0;
+}
+/* 文字溢出用省略号 */
+.news-bd ul li{
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 生活服务模块制作 */
+.main .newsflash .lifeservice{
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+.lifeservice  ul{
+    width: 252px;
+}
+.lifeservice  ul li{
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+  
+}
+.lifeservice  ul li i{
+
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+}
+.lifeservice  ul li .jian{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+}
+
+/* 生活服务里面的背精灵图 */
+.lifeservice  ul li .huafei-service{
+    background: url(../images/icons.png) no-repeat -16px -14px;
+}
+.lifeservice  ul li .jipiao-service{
+    background: url(../images/icons.png) no-repeat -80px -15px;
+}
+.lifeservice  ul li .dianying-service{
+    background: url(../images/icons.png) no-repeat -141px -15px;
+}
+.lifeservice  ul li .youxi-service{
+    background: url(../images/icons.png) no-repeat -206px -15px;
+}
+.lifeservice  ul li .caipiao-service{
+    background: url(../images/icons.png) no-repeat -16px -86px;
+}
+.lifeservice  ul li .jiayou-service{
+    background: url(../images/icons.png) no-repeat -80px -86px;
+}
+.lifeservice  ul li .jiudian-service{
+    background: url(../images/icons.png) no-repeat -141px -86px;
+}
+.lifeservice  ul li .huoche-service{
+    background: url(../images/icons.png) no-repeat -206px -86px;
+}
+.lifeservice  ul li .zhongchou-service{
+    background: url(../images/icons.png) no-repeat -16px -156px;
+}
+.lifeservice  ul li .licai-service{
+    background: url(../images/icons.png) no-repeat -80px -156px;
+}
+.lifeservice  ul li .lipin-service{
+    background: url(../images/icons.png) no-repeat -141px -156px;
+}
+.lifeservice  ul li .baitiao-service{
+    background: url(../images/icons.png) no-repeat -206px -156px;
+}
+.main .newsflash .bargain{
+    margin-top: 5px;
+}
+
+
+/* 推荐模块制作 */
+.recommend{
+    height: 163px;
+    margin-top: 12px;
+
+}
+.recommend .recom_hd{
+    height: 163px;
+    width: 208px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+.recommend .recom_hd h5{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #e4e4e4;
+}
+
+.recommend .recom_bd{
+    height: 163px;
+}
+.recommend .recom_bd li{
+    float: left;
+    
+    position: relative;
+}
+.recommend .recom_bd li img{
+    width: 248px;
+    height: 163px;
+}
+/* 只给前三个li添加伪元素 */
+.recommend .recom_bd  li:nth-child(-n+3)::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 145px;
+    width: 1px;
+    background-color: #ddd;
+}
+
+
+/* 猜你喜欢模块 */
+.guess{
+    height: 270px;
+    margin-top: 18px;
+}
+
+.guess .guess-head{
+    height: 40px;
+    line-height: 40px;
+}
+.guess .guess-head h3{
+    color: #333333;
+    font-size: 18px;
+}
+
+.guess .guess-head a{
+    position: relative;
+    right: 10px;
+    padding-right: 20px;
+    font-size: 12px;
+    color: 666666;
+}
+.guess .guess-head a i{
+    position: absolute;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+    background:url(../images/icons.png) no-repeat -418px -110px;
+}
+/* 清除浮动 */
+.guess-body{
+    border: 1px solid #ededed;
+}
+.guess-body:after{
+        content: "";
+        display: block;
+        height: 0;
+        clear:both;
+        visibility: hidden;
+}
+
+.guess-body ul li{
+    position: relative;
+    float: left;
+    width: 239px;
+    height: 230px;
+}
+
+.guess-body ul li a:hover h6{
+    color: #df3033;
+}
+.guess-body ul li a:hover::after{
+    opacity: 1;
+}
+.guess-body ul li a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 160px;
+    width: 100%;
+    background:rgba(253, 253, 253, .4);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
+}
+.guess-body .guess-item-img{
+    height: 160px;
+    width: 100%;
+    line-height: 160px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.guess-body .guess-img img{
+    width: 160px;
+    height: 140px;
+}
+.guess-body .guess-item-detail{
+    width: 170px;
+    height: 65px;
+    margin-left: 57px;
+    padding-right: 40px;
+    border-right: 1px solid #ededed;
+    
+    
+}
+.guess-body .last_detail{
+    border-right: 0;
+    
+
+}
+
+.guess-body .guess-item-detail h6{
+    color: #666666;
+    font-size: 12px;
+    height: 35px;
+}
+
+ .guess-item-detail .price-origin{
+     font-size: 16px;
+     color: #df3033;
+ }
+
+
+ /* floor模块 */
+ .floor .box_hd{
+     height: 30px;
+     border-bottom: 2px solid #c81623;
+ }
+ .floor .box_hd h3{
+     float: left;
+     font-size: 18px;
+     color: #c81623;
+     font-weight: 400;
+ }
+ .floor .box_hd ul li{
+     float: left;
+     line-height: 30px;
+ }
+ .floor .box_hd ul li a{
+     padding: 0 15px;
+ }
+ .floor .w{
+     margin-top: 30px;
+ }
+
+ .floor .box_bd{
+     height: 361px;
+ }
+
+ .floor .box_bd .tab_list_item>div{
+     float: left;
+ } 
+
+ .col_210{
+     width: 210px;
+     height: 361px;
+     background-color: #f9f9f9;
+     text-align: center;
+ }
+ .col_210 ul {
+     padding-left: 12px;
+ }
+ .col_210 ul li{
+     float: left;
+     width: 85px;
+     height: 34px;
+     margin-right: 10px;
+     border-bottom: 1px solid #ccc;
+     text-align: center;
+     line-height: 33px;
+ }
+ .col_329{
+     width: 329px;
+ }
+ .col_221{
+     width: 221px;
+     border-right: 1px solid #ccc;
+ }
+ .col_219{
+     width: 219px;
+ }
+ .bb{
+     /* 一般情况下，a包含有宽度的盒子，a需要转换块级 */
+     display: block;
+     border-bottom: 1px solid #ccc;
+ }

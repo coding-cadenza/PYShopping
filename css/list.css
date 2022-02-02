@@ -1,0 +1,137 @@
+/* 列表页专有css */
+.nav{
+    overflow: hidden;
+}
+.sk{
+    position: absolute;
+    left:  190px;
+    top:40px;
+    border-left: 1px solid #c81523;
+    padding:3px 0 0 14px;
+}
+.sk_list{
+    float: left;
+}
+.sk_list ul li{
+    float: left;
+}
+.sk_list ul li a{
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+
+}
+ .sk_con{
+    float: left;
+}
+
+.sk_con ul li{
+    float: left;
+}
+.sk_con ul li a{
+    display: block;
+    line-height: 48px;
+    padding: 0 20px;
+    font-size: 14px;
+
+    
+}
+.sk_con ul li:last-child a::after{
+    content: '\e91e';
+    font-family: 'icomoon';
+
+}
+
+/* 列表页主体 */
+
+.sk_bd ul li{
+    
+    float: left;
+    margin-right: 12px;
+    margin-top: 25px;
+    width: 290px;
+    height: 460px;
+    border:  1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li:hover{
+    border: 1px solid #c81523;
+}
+.sk_bd ul li img{
+    height: 290px;
+    width: 288px;
+}
+.sk_bd ul li h5{
+    font-size: 14px;
+    color: #a3a3a3;
+    margin: 0 10px  0 15px;
+  
+}
+.sk_bd .sk_price{
+    margin: 7px 10px  0 15px;
+}
+.sk_bd  .sk_price .original_price{
+    
+    font-size: 22px;
+    font-weight: 600;
+    color: #e60012;
+}
+.sk_bd .sk_price .original_price i{
+font-size: 14px;
+}
+.sk_bd .sk_price .current_price{
+    position: relative;
+    padding: 0 3px;
+    font-weight: 600;
+    color: #a4a4a4;
+}
+.sk_bd .sk_price .current_price::after{
+    position: absolute;
+    left: 1.5px;
+    top: 8.5px;
+    content: '';
+    width: 40px;
+    border-bottom: 1px solid #a4a4a4;
+    
+
+}
+.sk_bd .inventory{
+    height: 35px;
+    line-height: 35px;
+    margin: 0 10px  0 15px;
+}
+.sk_bd ul li button{
+    display: block;
+    height: 51px;
+    width: 289px;
+    line-height: 50px;
+    background-color: #b1191a;
+    margin-top:1px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+.sk_bd ul li .bar{
+    display: inline-block;
+    height: 12px;
+    width: 133px;
+    overflow: hidden;
+    background-color: #e6e6e6;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+.sk_bd ul li i{
+    display: inline-block;
+}
+.sk_bd ul li .bar .bar_in{
+    width: 50%;
+    height: 12px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #e12228;
+}
